@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portal Page</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
     <h1><a href="index.php">Lee's Portal Page</a></h1>
-    <h2>The navigation below represets our BIG Assignments. </h2>
     <div id="wrapper">
     <nav>
         <ul>
@@ -22,24 +23,37 @@
 </nav>
 
 <main>
-<h2>About Lee</h2> 
+<h2>About Me</h2> 
 <img class="right" src="images/lee.jpg" alt="Lee">
-<p>A paragraph about yourself - goals, background, hobbies, etc! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus, ex sit amet commodo aliquet, tortor justo tincidunt ante, sed porta lorem ipsum varius ex. Fusce malesuada nibh nec egestas mattis. Proin rutrum, arcu eu pharetra iaculis, neque ante fermentum tortor, ut lacinia sapien ipsum gravida ligula. Suspendisse euismod gravida malesuada. Curabitur varius eros id ex finibus feugiat. Morbi ut ligula vitae ipsum fermentum hendrerit. Etiam et tempor nisi, quis aliquam orci. Aenean nec arcu et tortor interdum laoreet eget et augue. Donec facilisis nunc et nibh mattis porta. Mauris rhoncus venenatis fermentum. Nullam in convallis odio. Vestibulum et metus et turpis vehicula accumsan. Duis ac semper nisi, sit amet venenatis odio.</p>
+<p>
+Hi! I’m Lee and this is my second quarter as a web development student at Seattle Central. I’m a semi-recent transplant to Seattle, I lived in Portland previously but am originally from the East Coast. I’ve worked in pet care and grooming for the last 15 years and while I love my job, I’m excited for a career change.  My goal through this program is to finish my associate’s and get into the tech industry, with the potential to go on to either the Application Development or Computer Science programs at North Seattle College.
+<br>
+<br>When I’m not working or doing schoolwork, I enjoy hiking with my dog, baking, and traveling as much as possible.
 
+</p>
+<h3>MAMP - HW1</h3>
+<br>
+<img class="mamp" src="images/mampscreenshot.png" alt="MAMP screenshot">
+<img class="mamp" src="images/errorscreenshot.png" alt="Error screenshot">
 </main>
 
 <aside>
 <h2>Weekly Class Exercises</h2>
 <h3>Week 2</h3>
 <ul>
-<li><a href="var.php">var.php</a></li>
-<li><a href="">var2.php</a></li><li><a href="">exercise 3</a></li><li><a href="">exercise 4</a></li>
+<li><a href="weeks/week2/var.php">var.php</a></li>
+<li><a href="weeks/week2/vars2.php">vars2.php</a></li>
+<li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
+<li><a href="weeks/week2/currency.php">currency.php</a></li>
+<li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
 </ul>
 </aside>
 
 
 </div>
 <!--close wrapper-->
+
+
 
 <footer>
     <ul>
