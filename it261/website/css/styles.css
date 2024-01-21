@@ -6,13 +6,14 @@
     box-sizing:border-box;
 }
 
+
 body{
     background:beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
-    background:yellow;
+    background: #123C69;
     padding: 20px 0;
 }
 
@@ -56,7 +57,7 @@ nav a{
 
 main{
     width:62%;
-    background:lightblue;
+    background:#123C69;
     float:left;
 
 }
