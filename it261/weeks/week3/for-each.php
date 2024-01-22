@@ -36,6 +36,22 @@ foreach($shows as $key => $value) {
     echo '<li><b>'.$key.'</b>: '.$value.'</li>';
 }
 echo '</ul>';
+ 
+echo'<h2>Shows corrected as per my answer in the Week 3 Treasure Hunt</h2>'
+$shows = [
+    'Apple TV' => 'Severance',
+    'Apple TV 2' => 'For All Mankind',
+    'Showtime' => 'City on a Hill',
+    'Showtime 2' => 'Homeland',
+    'Movie' => 'Top Gun Maverick',
+    'HBO MAX' => 'Hacks'
+];
+
+echo '<ul>';
+foreach($shows as $key => $value) {
+    echo '<li><b>'.$key.'</b>: '.$value.'</li>';
+}
+echo '</ul>';
 
 echo'<h2>Time for our navigation that will again have both a key and a value</h2>';
 

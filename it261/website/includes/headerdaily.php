@@ -127,6 +127,7 @@ switch($today) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
+    <link rel="icon" type="image/x-icon" href="images/souplogo.png">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Sail&display=swap');
@@ -135,7 +136,7 @@ switch($today) {
 }
        body {
             background-image: url("images/<?php echo $background2 ?>");
-        }
+        } 
         #logo {
             max-width: 100px;
             margin-left: 20px;
