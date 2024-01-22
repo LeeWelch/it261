@@ -53,7 +53,6 @@ Hi! I’m Lee and this is my second quarter as a web development student at Seat
 <li><a href="weeks/week3/date.php">date.php</a></li>
 <li><a href="weeks/week3/for-each.php">for-each.php</a></li>
 <li><a href="weeks/week3/for-loop.php">for-loop.php</a></li>
-<li><a href="weeks/week3/if.php">if.php</a></li>
 <li><a href="weeks/week3/index.php">index.php</a></li>
 <li><a href="weeks/week3/switch.php">switch.php</a></li>
 </ul>
