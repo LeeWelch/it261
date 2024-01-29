@@ -45,6 +45,7 @@ $nav = array(
 );
 
 // beginning of the switch for homework 3!!!
+date_default_timezone_set('America/Los_Angeles');
 if(isset($_GET['today'])) {
     $today = $_GET['today'] ;
 } else {
