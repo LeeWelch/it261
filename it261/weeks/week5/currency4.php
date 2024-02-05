@@ -102,7 +102,7 @@ echo '
 
 ';  
 
-} else{
+} elseif(!empty($name && $email && $amount && $currency) && ($bank != NULL) && ($dollars < 1000)){
 echo '
 <div class="box" style="background: pink;">
 <h2>Hello '.$name.',</h2>
