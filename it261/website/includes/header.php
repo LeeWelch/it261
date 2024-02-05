@@ -134,7 +134,7 @@ switch($today) {
         <div class="inner-header">
         <a href="index.php">
 
-            <img id="logo" src="images/logo.png" alt="logo">
+            <img id="logo" src="images/phplogo.png" alt="logo">
         </a>
 
         <nav>
@@ -142,9 +142,9 @@ switch($today) {
             <?php
 foreach($nav as $key => $value) {
     if (THIS_PAGE == $key){
-        echo '<li><a style="color:red;" href=" '.$key.' "> '.$value.' </a></li>';
+        echo '<li><a style="color:#71F79F;" href=" '.$key.' "> '.$value.' </a></li>';
     } else {
-        echo '<li><a style ="color:green;" href=" '.$key.' "> '.$value.' </a></li>';
+        echo '<li><a style ="color:white;" href=" '.$key.' "> '.$value.' </a></li>';
     }
 
 } // end foreach

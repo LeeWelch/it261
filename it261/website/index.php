@@ -3,7 +3,7 @@ include('includes/header.php');
 ?>
     <div id="wrapper">
     <div id="hero">
-        <img src="images/twelve.jpg" alt="Twelve is greater than 3">
+        <img src="images/seattle2.jpg" alt="seattle skyline">
     </div>
     <!-- end hero -->
     <main>
@@ -15,7 +15,7 @@ include('includes/header.php');
         </p>
     </main>
     <aside>
-    <h3>This is our headline three in our beautiful aside</h3>
+    <h3>Aside</h3>
     <p>Sed rhoncus lorem a ultricies iaculis. Vestibulum feugiat augue vel diam dictum, et hendrerit libero egestas. Duis mollis dignissim urna ut consectetur. Praesent nec libero vel enim congue elementum nec vitae dolor. Proin vitae sollicitudin tellus, a interdum nisl. Fusce ut maximus neque, in suscipit tortor. Donec ullamcorper ante et accumsan malesuada. In hac habitasse platea dictumst. Cras nec consequat leo, rutrum venenatis est. Pellentesque faucibus, magna non facilisis sollicitudin, ipsum eros feugiat felis, eu viverra justo risus semper ligula. Integer cursus risus libero, facilisis maximus arcu scelerisque nec.
     </p>
     </aside>
