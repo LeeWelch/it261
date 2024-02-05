@@ -15,7 +15,7 @@ How many days will you be driving?  300 divided by 60 divided by 2
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculating Form V1</title>
+    <title>Calculating Form</title>
     <link href="css/calculator.css" type="text/css" rel="stylesheet">
 
 </head>
@@ -98,10 +98,10 @@ $_POST['mpg'])) {
     $gas = floatval($_POST['gas']);  
     $mpg = floatval($_POST['mpg']); 
 if($speed == 0) {
-    $speed = 1;
+    $speed = .5;
 }
 if($hours == 0) {
-    $hours = 1;
+    $hours = .5;
 }
 if($mpg == 0) {
     $mpg = 1;
@@ -114,13 +114,13 @@ $total_gallons = $miles / $mpg;
 
 $price = ($miles / $mpg) * $gas;  
 
- if(!empty($name && $miles && $speed && $hours && $gas) && ($mpg != NULL) && ($mpg != 1)) {
+ if(!empty($name && $miles && $speed && $hours && $gas) && ($miles > 0) &&($speed >= 1) && ($hours >=1 ) && ($mpg != NULL) && ($mpg != 1)) {
 
 echo '
 <div class="box">
 <h2>Hello '.$name.'!</h2>
-<p>Here are your trip details: <br> Your travel time will be '.$total_hours.' hours total, and your trip will take '.$total_days.' days. <br>
-Your trip will use '.$total_gallons.' gallons of gas, and cost $'.number_format($price, 2).' dollars. <br> Have a good trip!</p>
+<p>Here are your trip details: <br> Your travel time will be '.number_format($total_hours, 2).' hours total, and your trip will take '.number_format($total_days, 2).' days. <br>
+Your trip will use '.number_format($total_gallons, 2).' gallons of gas, and cost $'.number_format($price, 2).' dollars. <br> Have a good trip!</p>
 </div>
 ';  
 
