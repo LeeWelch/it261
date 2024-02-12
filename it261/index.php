@@ -73,6 +73,12 @@ Hi! I’m Lee and this is my second quarter as a web development student at Seat
 <li><a href="weeks/week5/currency4.php">currency4.php</a></li>
 <li><a href="weeks/week5/null.php">null.php</a></li>
 </ul>
+<h3>Week 6</h3>
+<ul>
+<li><a href="weeks/week6/form.php">form.php</a></li>
+<li><a href="weeks/week6/form2.php">form2.php</a></li>
+<li><a href="weeks/week6/functions.php">functions.php</a></li>
+</ul>
 </aside>
 
 
