@@ -8,7 +8,7 @@ include('includes/headerdaily.php');
     <!-- end hero -->
     <main>
         <h1>Soup of the Day</h1>
-        <h2 class="colorh2"> <?php
+        <h2 class="colorh2" style="color: <?php echo $actDay ?>;"> <?php
         echo $day;
         ?> </h2>
         <img class="soup" src="images/<?php echo $picture; ?>" alt="<?php echo $altTag; ?>">

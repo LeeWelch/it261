@@ -74,7 +74,7 @@ switch($today) {
 
     case 'Saturday';
     $actDay = 'red';
-    $day = '<h2>Saturday is Chicken Noodle Soup Day</h2>';
+    $day = 'Saturday is Chicken Noodle Soup Day';
     $details ='Chicken soup has been around since time immemorial and cultures across the world have their own version of this classic comfort food. When it comes to classic American chicken soup, though, you can typically count on a steaming bowl full of homemade chicken stock, flavored with celery, carrots, noodles and chicken.';
     $picture = 'chickennoodlesoup.jpg';
     $altTag ='Chicken noodle soup';
@@ -93,7 +93,7 @@ switch($today) {
 
     case 'Monday';
     $actDay = 'yellow';
-    $day = '<h2>Monday is Minestrone Soup Day</h2>';
+    $day = 'Monday is Minestrone Soup Day';
     $details ='Minestrone has been around for hundreds of years, but the recipe for this Italian soup isn\'t set in stone. In fact, by definition minestrone soup is simply a vegetable medley, made using whatever produce one has on hand. Celery, tomatoes, garlic, onions and carrots often comprise the base of the soup, while additional ingredients (like beans and greens) can be added depending on whatever is fresh and abundant.';
     $picture = 'minestrone.jpg';
     $altTag ='Minestrone soup';
@@ -102,7 +102,7 @@ switch($today) {
 
     case 'Tuesday';
     $actDay = 'green';
-    $day = '<h2>Tuesday is Tomato Soup Day</h2>';
+    $day = 'Tuesday is Tomato Soup Day';
     $details ='Another classic comfort food, tomato soup became an American household staple when a chemist working at Campbell\'s came up with the idea to condense the stuff back in 1897. And while we have no problem reaching for a can every now and then, you can\'t beat snuggling up with a homemade bowl of sweet and silky tomato soup (preferably served with a side of grilled cheese).';
     $picture = 'tomatosoup.jpg';
     $altTag ='Tomato Soup';
@@ -111,7 +111,7 @@ switch($today) {
 
     case 'Wednesday';
     $actDay = 'blue';
-    $day = '<h2>Wednesday is New England Clam Chowder Day</h2>';
+    $day = 'Wednesday is New England Clam Chowder Day';
     $details ='New England clam chowder was first introduced to the region in the 18th century, and its popularity in American cuisine has not diminished since. Rich, thick and creamy, this chowder comes together with copious amounts of milk or cream, plus salt pork (i.e., bacon), celery, potatoes, onion and, of course, tender clams. This indulgent meal is traditionally served with oyster crackers which can be used for dipping or as a garnish.';
     $picture = 'clamchowder.jpg';
     $altTag ='Clam Chowder';
@@ -120,7 +120,7 @@ switch($today) {
 
     case 'Thursday';
     $actDay = 'indigo';
-    $day = '<h2>Thursday is Butternut Squash Soup Day</h2>';
+    $day = 'Thursday is Butternut Squash Soup Day';
     $details ='A seasonal staple in the fall, this soup is made by roasting butternut squash puree with chicken or vegetable stock for a smooth consistency and savory flavor. Other seasonal ingredients (think: apples and root vegetables) are often roasted and whipped up along with the squash for a more robust, nuanced final product. ';
     $picture = 'butternut.jpg';
     $altTag ='Butternut Squash Soup';
@@ -129,7 +129,7 @@ switch($today) {
 
     case 'Friday';
     $actDay = 'violet';
-    $day = '<h2>Friday is French Onion Soup Day</h2>';
+    $day = 'Friday is French Onion Soup Day';
     $details ='The origins of onion soup has been debated over time. It started as a poor man\'s meal, but thanks to the restaurants of the famed Les Halles market in Paris, this peasant food got its luxe makeover in the form of a gratin. A gooey, bubbling layer of Gruyère cheese adorns the rich, amber broth of beef stock and caramelized onions—a combination that can only be described as délicieuse.';
     $picture = 'onion.jpg';
     $altTag ='French Onion Soup';
