@@ -21,16 +21,6 @@ echo make_links($nav);
             ?>
             </ul>
         </nav>
-      <!--  <nav>
-            <ul>
-                <li><a href="">Home</a></li> 
-                <li><a href="">About</a></li>   
-                <li><a href="">Daily</a></li>   
-                <li><a href="">Project</a></li>   
-                <li><a href="">Contact</a></li>   
-                <li><a href="">Gallery</a></li>     
-            </ul>
-        </nav>-->
         </div>
         <!--end inner-header-->
     </header>

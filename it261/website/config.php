@@ -1,8 +1,34 @@
 <?php
 
-ob_start();
-
+// ob_start(); // prevents header errors before reading the whole page
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+
+
+
+// our  navigational array!
+$nav = array(
+    'index.php' => 'Home',
+    'about.php' => 'About',
+    'daily.php' => 'Daily',
+    'project.php' => 'Project',
+    'contact.php' => 'Contact',
+    'gallery.php' => 'Gallery'
+);
+
+function make_links($nav) {
+    $my_return = '';
+    foreach($nav as $key => $value) {
+        if (THIS_PAGE == $key) {
+            $my_return .= '<li><a style="color:#71F79F;" class="current" href="'.$key.'">
+            '.$value.' </a></li>';
+        } else {
+          $my_return .= '<li><a style ="color:white;" href=" '.$key.' "> '.$value.' </a></li>';
+        }
+    
+    } // end foreach
+    return $my_return;
+    
+    } // end function
 
 switch(THIS_PAGE) {
         case 'index.php' :
@@ -34,35 +60,19 @@ switch(THIS_PAGE) {
              $title = 'Gallery page of our Website Project';
             $body = 'gallery inner';
             break;
-}
 
-// our  navigational array!
-$nav = array(
-    'index.php' => 'Home',
-    'about.php' => 'About',
-    'daily.php' => 'Daily',
-    'project.php' => 'Project',
-    'contact.php' => 'Contact',
-    'gallery.php' => 'Gallery'
-);
+            case 'thx.php' :
+                $title = 'Thank you page of our Website Project';
+               $body = 'thx inner';
+               break;
 
-function make_links($nav) {
-    $my_return = '';
-    foreach($nav as $key => $value) {
-        if (THIS_PAGE == $key) {
-            $my_return .= '<li><a style="color:#71F79F;" class="current" href="'.$key.'">
-            '.$value.' </a></li>';
-        } else {
-          $my_return .= '<li><a style ="color:white;" href=" '.$key.' "> '.$value.' </a></li>';
-        }
-    
-    } // end foreach
-    return $my_return;
-    
-    } // end function
-    
+        default:
+        $title = 'Project page of our Website Project';
+            $body = 'project inner';
+            $headline = 'Welcome to our Project page of our IT 261 Website!';
+}    
 
-// beginning of the switch for homework 3!!!
+// beginning of the switch HW3 - Daily page
 date_default_timezone_set('America/Los_Angeles');
 if(isset($_GET['today'])) {
     $today = $_GET['today'] ;
@@ -138,12 +148,12 @@ switch($today) {
 
 }
 
-// my form's PHP
+// my emailable form's PHP
 
 $first_name = '';
 $last_name = '';
 $email = '';
-$wines = '';
+$teas = '';
 $gender = '';
 $phone = '';
 $regions = '';
@@ -158,18 +168,18 @@ $phone_err = '';
 $regions_err = '';
 $comments_err = '';
 $privacy_err = '';
-$wines_err = '';
+$teas_err = '';
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
 
 // if inputs are empty, we will declare a statement else we will assign the $_POSTS to a variable 
-// $wines =  $_POST['wines']
+// $teas =  $_POST['tea']
 
-if(empty($_POST['wines'])) {
+if(empty($_POST['teas'])) {
 // say something or do something 
-$wines_err = 'What... no wines?';
+$teas_err = 'Please select your favorite teas!';
 } else {
-    $wines = $_POST['wines'];
+    $teas = $_POST['teas'];
 }
 
 if(empty($_POST['first_name'])) {
@@ -207,12 +217,16 @@ if($_POST['regions'] == NULL) {
         $regions= $_POST['regions'];
 }
 
-if(empty($_POST['phone'])) {
-    // say something or do something 
-    $phone_err = 'Please enter your phone number!';
-} else {
-        $phone = $_POST['phone'];
-}
+if(empty($_POST['phone'])) { // if empty, type in your number
+    $phone_err = 'Your phone number please!';
+    } elseif(array_key_exists('phone', $_POST)){
+    if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+    { // if format is not xxx-xxx-xxxx, display Invalid format
+    $phone_err = 'Invalid format!';
+    } else{
+    $phone = $_POST['phone'];
+    } // end else
+    } // end main if
 
 if(empty($_POST['comments'])) {
     // say something or do something 
@@ -228,26 +242,26 @@ if(empty($_POST['privacy'])) {
         $privacy = $_POST['privacy'];
 }
 
-function my_wines($wines) {
+function my_teas($teas) {
 $my_return='';
-if(!empty($_POST['wines'])) {
-    $my_return = implode(',' , $_POST['wines']);
+if(!empty($_POST['teas'])) {
+    $my_return = implode(',' , $_POST['teas']);
 }
 return $my_return;
 
-} // end my_wines function
+} // end my_teas function
 
 if(isset($_POST['first_name'],
 $_POST['last_name'],
 $_POST['email'],
 $_POST['gender'],
 $_POST['phone'],
-$_POST['wines'],
+$_POST['teas'],
 $_POST['regions'],
 $_POST['comments'],
 $_POST['privacy'])) {
 
-$to = 'erw4627@gmail.com';
+$to = 'emily.welch@seattlecolleges.edu';
 $subject = 'Test email on '.date('m/d/y, h i A');
 $body = '
 First Name: '.$first_name.'  '.PHP_EOL.'
@@ -255,14 +269,14 @@ Last Name: '.$last_name.'  '.PHP_EOL.'
 Email: '.$email.'  '.PHP_EOL.'
 Gender: '.$gender.'  '.PHP_EOL.'
 Phone: '.$phone.'  '.PHP_EOL.'
-Wines: '.my_wines($wines).'  '.PHP_EOL.'
+Teas: '.my_teas($teas).'  '.PHP_EOL.'
 Regions: '.$regions.'  '.PHP_EOL.'
 Comments: '.$comments.'  '.PHP_EOL.'
 ';
 
 
 $headers = array(
-    'From' => 'noreply@gmail.com'
+    'From' => 'noreply@seattlecolleges.edu'
 );
 
 // we will be adding an if statement - that this email form will work ONLY if all the fields are filled out!
@@ -272,10 +286,11 @@ if(!empty(
     $last_name &&
     $email &&
     $gender &&
-    $wines &&
+    $teas &&
     $regions &&
     $phone &&
-    $comments)) {
+    $comments) &&
+    preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
 
 mail($to, $subject, $body, $headers);
 header('Location:thx.php');
@@ -285,6 +300,23 @@ header('Location:thx.php');
 } // end isset
 
 }  // closing server request method
+
+// start of the random images php
+$photos[0] = 'seattle1';
+$photos[1] = 'seattle2';
+$photos[2] = 'seattle3';
+$photos[3] = 'seattle4';
+$photos[4] = 'seattle5';
+
+function random_photos($photos) {
+    $my_return = '';
+    $i = rand(0, 4);
+    $selected_image = ''.$photos[$i].'.jpg';
+    $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+    return $my_return;
+    } // end function
+
+
 
 
 

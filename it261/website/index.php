@@ -4,7 +4,7 @@ include('includes/header.php');
 ?>
     <div id="wrapper">
     <div id="hero">
-        <img src="images/seattle2.jpg" alt="seattle skyline">
+         <?php echo random_photos($photos);?>
     </div>
     <!-- end hero -->
     <main>
