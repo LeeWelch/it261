@@ -16,7 +16,7 @@
             <li><a href="website/daily.php">Switch</a></li>
             <li><a href="website/adder.php">Troubleshoot</a></li>
             <li><a href="website/calculator.php">Calculator</a></li>
-            <li><a href="">Email</a></li>
+            <li><a href="website/contact.php">Email</a></li>
             <li><a href="">Database</a></li>
             <li><a href="">Gallery</a></li>
         </ul>
@@ -78,6 +78,13 @@ Hi! I’m Lee and this is my second quarter as a web development student at Seat
 <li><a href="weeks/week6/form.php">form.php</a></li>
 <li><a href="weeks/week6/form2.php">form2.php</a></li>
 <li><a href="weeks/week6/functions.php">functions.php</a></li>
+</ul>
+<h3>Week 7</h3>
+<ul>
+<li><a href="weeks/week7/form3.php">form3.php</a></li>
+<li><a href="weeks/week7/strings.php">strings.php</a></li>
+<li><a href="weeks/week7/pictures.php">pictures.php</a></li>
+<li><a href="weeks/week7/rand.php">rand.php</a></li>
 </ul>
 </aside>
 
