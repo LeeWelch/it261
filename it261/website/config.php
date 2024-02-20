@@ -261,7 +261,7 @@ $_POST['regions'],
 $_POST['comments'],
 $_POST['privacy'])) {
 
-$to = 'emily.welch@seattlecolleges.edu';
+$to = 'szemeo@mystudentswa.com';
 $subject = 'Test email on '.date('m/d/y, h i A');
 $body = '
 First Name: '.$first_name.'  '.PHP_EOL.'
