@@ -6,9 +6,7 @@ $plants['ZZ Raven'] = 'zzrave_A darker coloration of the classic ZZ Plant. ';
 $plants['Tradescantia Nanouk'] = 'trades_Adaptable and easy to care for, with colorful purple and green vines.';
 $plants['Calathea Triostar'] = 'calath_Finicky but gorgeous when cared for correctly. ';
 $plants['Hoya Compacta'] = 'hoyaco_AKA the Rope Plant, a slow growing vine with tortellini shaped leaves. ';
-// variable   key                value 
-// $name                         $image
-// change the numbers!! -> i changed the value_ to 6 chars
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,25 +35,25 @@ $plants['Hoya Compacta'] = 'hoyaco_AKA the Rope Plant, a slow growing vine with 
         }
 
         footer{
-    height:60px;
-    line-height: 60px;
-    clear:both;
-}
+        height:60px;
+        line-height: 60px;
+        clear:both;
+        }
 
-footer ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-footer li{
-    justify-content: center;
-    margin: 0 15px;
-}
+        footer ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        
+        footer li{
+            justify-content: center;
+            margin: 0 15px;
+        }
     </style>
 </head>
 <body>
-    <h1>Popular Rare Houseplants</h1>
+    <h1>Rare Houseplants</h1>
 <table>
 <?php foreach($plants as $name => $image)  :?>
 <tr>
