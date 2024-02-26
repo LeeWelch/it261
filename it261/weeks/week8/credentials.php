@@ -2,6 +2,6 @@
 
 define('DB_NAME', 'wjdftate_it261');
 define('DB_USER', 'wjdftate_erw4627');
-define('DB_PASSWORD', 'Rilakkuma261');
+define('DB_PASSWORD', 'password not posted on github');
 define('DB_HOST', 'mysql.leewelch.net');
 
