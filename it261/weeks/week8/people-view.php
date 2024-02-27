@@ -24,12 +24,14 @@ if(mysqli_num_rows($result) > 0) {
 
     while($row = mysqli_fetch_assoc($result)) {
 $first_name = stripslashes($row['first_name']); 
+//may need to change? is it stripclashes?
 $last_name = stripslashes($row['last_name']);
 $email = stripslashes($row['email']);
 $birthdate = stripslashes($row['birthdate']);
 $occupation = stripslashes($row['occupation']);
 $details = stripslashes($row['details']);
 $blurb = stripslashes($row['blurb']);
+// Potentially will add another column
 $feedback = '';
     } // close while loop 
 

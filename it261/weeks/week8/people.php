@@ -35,11 +35,7 @@ while($row = mysqli_fetch_assoc($result))  {
     <p>For more information about '.$row['first_name'].', click <a href="people-view.php?id='.$row['people_id'].'" >here</a></p>
     ';
 
-
 } // end while loop
-
-
-
 
 } else {
     echo 'Nobody home!';
@@ -55,10 +51,9 @@ while($row = mysqli_fetch_assoc($result))  {
 </main>
 
 <aside>
-
-
+<h2>Aside with Random Image!</h2>
+<?php echo random_photos($photos);?>
 </aside>
-
 
 </div>
 <!-- end wrapper -->
