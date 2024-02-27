@@ -261,7 +261,7 @@ $_POST['regions'],
 $_POST['comments'],
 $_POST['privacy'])) {
 
-$to = 'szemeo@mystudentswa.com';
+$to = 'emily.welch@seattlecolleges.edu';
 $subject = 'Test email on '.date('m/d/y, h i A');
 $body = '
 First Name: '.$first_name.'  '.PHP_EOL.'
@@ -317,6 +317,16 @@ function random_photos($photos) {
     } // end function
 
 
+// start gallery php
+$plants['Philodendron Silver Sword'] = 'silver_A Philodendron with unique silver-green sword shaped leaves. ';
+$plants['Philodendron Pink Princess'] = 'pinkpr_A Philodendron with colorful pink variegation. ';
+$plants['Monstera Thai Constellation'] = 'thaico_A Monstera variety known for it\'s beautiful \'constellation\' pattern. ';
+$plants['ZZ Raven'] = 'zzrave_A darker coloration of the classic ZZ Plant. ';
+$plants['Tradescantia Nanouk'] = 'trades_Adaptable and easy to care for, with colorful purple and green vines.';
+$plants['Calathea Triostar'] = 'calath_A white, pink and green variation of the Prayer Plant.';
+$plants['Hoya Compacta'] = 'hoyaco_AKA the Rope Plant, a slow growing vine with tortellini shaped leaves. ';
+ 
+//end gallery
 
 
 
