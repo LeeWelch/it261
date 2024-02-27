@@ -1,12 +1,11 @@
 <?php
-$plants['Philodendron Silver Sword'] = 'silver_A Philodendron with unique silvery green sword shaped leaves. ';
+$plants['Philodendron Silver Sword'] = 'silver_A Philodendron with unique silver-green sword shaped leaves. ';
 $plants['Philodendron Pink Princess'] = 'pinkpr_A Philodendron with colorful pink variegation. ';
 $plants['Monstera Thai Constellation'] = 'thaico_A Monstera variety known for it\'s beautiful \'constellation\' pattern. ';
 $plants['ZZ Raven'] = 'zzrave_A darker coloration of the classic ZZ Plant. ';
 $plants['Tradescantia Nanouk'] = 'trades_Adaptable and easy to care for, with colorful purple and green vines.';
-$plants['Calathea Triostar'] = 'calath_Finicky but gorgeous when cared for correctly. ';
+$plants['Calathea Triostar'] = 'calath_A white, pink and green variation of the Prayer Plant.';
 $plants['Hoya Compacta'] = 'hoyaco_AKA the Rope Plant, a slow growing vine with tortellini shaped leaves. ';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +44,7 @@ $plants['Hoya Compacta'] = 'hoyaco_AKA the Rope Plant, a slow growing vine with 
             justify-content: center;
             list-style-type: none;
         }
-        
+
         footer li{
             justify-content: center;
             margin: 0 15px;
