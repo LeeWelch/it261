@@ -1,16 +1,32 @@
 <?php
 
-// ob_start(); // prevents header errors before reading the whole page
+ob_start(); // prevents header errors before reading the whole page
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
+define('DEBUG', 'TRUE');
 
+include('credentials.php');
 
+$errors = array();
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }  
+} // end myError function
 
 // our  navigational array!
 $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'movies.php' => 'Movies',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery'
 );
@@ -46,9 +62,9 @@ switch(THIS_PAGE) {
             $body = 'daily inner';
             break;
 
-            case 'project.php' :
-             $title = 'Project page of our Website Project';
-            $body = 'project inner';
+            case 'movies.php' :
+             $title = 'Movies page of our Website Project';
+            $body = 'movies inner';
             break;
 
             case 'contact.php' :
@@ -67,9 +83,9 @@ switch(THIS_PAGE) {
                break;
 
         default:
-        $title = 'Project page of our Website Project';
+        $title = 'Our Website Project';
             $body = 'project inner';
-            $headline = 'Welcome to our Project page of our IT 261 Website!';
+            $headline = 'Welcome to our IT 261 Website!';
 }    
 
 // beginning of the switch HW3 - Daily page
@@ -328,6 +344,25 @@ $plants['Hoya Compacta'] = 'hoyaco_AKA the Rope Plant, a slow growing vine with 
  
 //end gallery
 
+// start movies random photo function
 
+$movies[0] = 'movies1_Alien ';
+$movies[1] = 'movies2_The Matrix ';
+$movies[2] = 'movies3_Dune ';
+$movies[3] = 'movies4_Mad Max ';
+$movies[4] = 'movies5_2001 A Space Odyssey ';
+$movies[5] = 'movies6_Blade Runner ';
+$movies[6] = 'movies7_Close Encounters of the Third Kind ';
+$movies[7] = 'movies8_Star Wars ';
+$movies[8] = 'movies9_Star Wars: The Empire Strikes Back ';
+$movies[9] = 'moviesa_Godzilla ';
+
+function random_movies($movies) {
+    $my_return = '';
+    $i = rand(0, 9);
+    $selected_image = ''.substr($movies[$i], 0, 7).'.jpg';
+    $my_return = '<figure><img src="images/'.$selected_image.'" alt="'.substr($movies[$i], 8, -1).'"><figcaption>'.substr($movies[$i], 8, -1).'</figcaption></figure>';
+    return $my_return;
+    } // end movies random photos function  
 
 ?>
