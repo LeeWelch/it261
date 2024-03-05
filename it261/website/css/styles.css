@@ -30,7 +30,7 @@ header{
 }
 
 #logo{
-    width:200px;
+    width:150px;
     float:left;
 }
 
@@ -69,6 +69,10 @@ main{
     background: #A6AED1;
     float:left;
 
+}
+
+ul {
+    list-style-type: none;
 }
 
 table{
