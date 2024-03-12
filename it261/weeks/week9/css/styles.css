@@ -22,6 +22,12 @@ h1{
     text-align: center;
 }
 
+.errors {
+    text-align: center;
+    font-style: italic;
+    color: red;
+}
+
 form{
     max-width: 400px;
     margin: 0 auto 30px auto;
